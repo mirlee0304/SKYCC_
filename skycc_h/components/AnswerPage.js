@@ -8,7 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import CheckBox from '../CheckBox';
+import CheckBox from './CheckBox';
 
 import { AntDesign } from '@expo/vector-icons';
 
