@@ -18,10 +18,10 @@ const MyWviewpage = () => {
           <Button
             title = "나도 답변할래요"
             style={styles.answerB}
+            colot='#2c2c2c'
             /*onpress*/
-          >
+          />
             
-          </Button>
 
           <StatusBar style="auto" />
         </View>
@@ -30,7 +30,6 @@ const MyWviewpage = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'teal',
     flex: 1,
     marginTop: 40,
   },
@@ -72,10 +71,9 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     //flexGrow:1,
-    //margin:10
+    margin:10
   },
   answerB: {
-    backgroundColor: 'tomato',
     fontsize: 15,
     paddingVertical: 10,
     paddingHorizontal: 12,
