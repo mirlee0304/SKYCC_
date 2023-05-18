@@ -12,8 +12,10 @@ const CocoBearPage = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.cocoContainer}>
+      <View></View>
       <Image
-        source={require('./images/cocobear.jpg')}
+        style={styles.cocoBear}
+        source={require('../images/cocobear.jpg')}
       />
       </View>
     
@@ -25,17 +27,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginTop: 50
   }, 
   cocoContainer: {},
   cocoBear: {
     resizeMode: 'contain',
-    width: 100,
-    height: 200,
+    width: 300,
+    height: 500,
+    alignSelf: 'center'
   },
 });
 

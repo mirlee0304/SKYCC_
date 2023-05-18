@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import { color } from '../color';
 
-const SearchDetailPage = () => {
+const SearchDetailPage = ({navigation}) => {
     return (
         <View style={styles.container}>
           <View>
@@ -11,10 +12,12 @@ const SearchDetailPage = () => {
           <Text style={styles.contents}>~~</Text>
           <Text style={styles.contents}>~~</Text>
           <Text style={styles.contents}>~~</Text>
-
-            
-
-
+          
+          <TouchableOpacity onPress={()=> navigation.navigate('search')}>
+            <View>
+            <Text>돌아가기</Text>
+            </View>
+          </TouchableOpacity>
           <StatusBar style="auto" />
         </View>
     )
@@ -25,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   category: {
-    backgroundColor: 'tomato',
+    backgroundColor: color.lightyellow,
     alignItems: 'center',
     paddingVertical: 30,
     paddingHorizontal: 30,
@@ -33,7 +36,7 @@ const styles = StyleSheet.create({
     borderRadius: 10, 
   },
   contents: {
-    backgroundColor: 'tomato',
+    backgroundColor: color.lightyellow,
     borderRadius: 20, 
     paddingVertical: 30,
     paddingHorizontal: 30,
@@ -42,5 +45,3 @@ const styles = StyleSheet.create({
 });
 
 export default SearchDetailPage;
-
-  

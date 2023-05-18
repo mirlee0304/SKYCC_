@@ -5,7 +5,7 @@ const StoryCircle = ({onPress}) => {
     <TouchableOpacity style={styles.container} onPress={() => onPress()}>
       <Image
         style={styles.image}
-        source={require('./images/profile.jpg')}
+        source={require('../images/profile.jpg')}
       />
     </TouchableOpacity>
   );
@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden'
   },
   image: {
-    width: 80,
-    height: 80,
-    resizeMode: 'cover',
+    width: 60,
+    height: 60,
+    resizeMode: 'stretch',
   }
 });
 
